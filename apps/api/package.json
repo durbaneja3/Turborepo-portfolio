@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "set PORT=8080  && nodemon index.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "nodemon": "latest",
+    "cors": "latest"
+  }
+}
