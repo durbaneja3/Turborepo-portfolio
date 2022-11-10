@@ -1,1 +1,2 @@
-export const OFFERUP_API_URL = "http://localhost:8080/api/offerup";
+export const OFFERUP_API_URL =
+  "https://api.offerup.diegourbaneja.com/api/offerup";

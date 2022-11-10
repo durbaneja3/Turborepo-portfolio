@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Router, useParams, useHistory } from "react-router-dom";
+import { OFFERUP_API_URL } from "../../Constants";
 
 export default function Listing({ setSearch }) {
   const [data, setData] = useState("");
@@ -7,7 +8,7 @@ export default function Listing({ setSearch }) {
   let route = useHistory();
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/offerup/${id}`)
+    fetch(`${OFFERUP_API_URL}/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
